@@ -26,7 +26,7 @@ if ( !ctxRoot.endsWith('/') ) {
 
 app.use(ctxRoot, express.static('dist'));
 
-var server = app.listen(8080, function () {
+var server = app.listen(8081, function () {
     indexData = _.template(fs.readFileSync('index.tpl'))(process.env);
 });
 
